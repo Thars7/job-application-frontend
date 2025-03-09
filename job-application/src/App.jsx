@@ -19,7 +19,7 @@ function App() {
     formData.append('cv', file);
 
     try {
-      const response = await fetch('http://localhost:5001/submit', {
+      const response = await fetch('job-application-backend-xo8s.vercel.app/submit', {
         method: 'POST',
         body: formData,
       });
